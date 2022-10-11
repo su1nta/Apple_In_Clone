@@ -1,0 +1,458 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'SF Mono',sans-serif;
+}
+.wrapper{
+    height:auto;
+    width:auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "shelf"
+    "carousel"
+    "footer";
+}
+
+.header{
+    grid-area:header;
+    position:fixed;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: rgba(20, 20, 20, 0.87);
+    padding:5px;
+    backdrop-filter: blur(8px);
+}
+.sticky{
+    position:fixed;
+}
+.header .hcontainer{
+    height:35px;
+    width:1069px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition:.2s;
+}
+.hcontainer div:nth-child(n) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hcontainer li{
+    list-style: none;
+    margin:0px 10px;
+    padding:5px 10px;
+    font-size:0.7em;
+    
+    font-weight: 100;
+    color:rgba(230,230,230,0.8);
+    transition:.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hcontainer li:hover{
+    color:white;
+}
+.logo, .search, .shop{
+    transition:.3s;
+}
+.logo .logoi, .search .searchi, .shop .shopi{
+    position:absolute;
+}
+.logo .logoiw, .search .searchiw, .shop .shopiw{
+    position:absolute;
+}
+.logo:hover .logoi, .search:hover .searchi, .shop:hover .shopi{
+    opacity: 0;
+}
+.hcontainer img{
+    height:16px;
+    width:16px;
+    transition:.2s;
+}
+.hcontainer .search, .hcontainer .shop{
+    margin:5px 10px;
+}
+.banner{
+    grid-area:banner;
+    margin-top:40px;
+}
+.banner div:nth-child(n){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner a{
+    text-decoration: none;
+    color:black;
+}
+.banner .banner-small{
+    height:50px;
+    background-color: #F4F4F7;
+    font-weight: 200;
+}
+.banner .banner-regular{
+    height:auto;
+    background-color: #FBFAFC;
+    font-weight: 100;
+    margin:10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.banner .banner-regular h1{
+    font-weight: 600;
+    font-size: 3.5em;
+    letter-spacing: -3.2px;
+    padding-top: 35px;
+}
+.banner .banner-regular h2{
+    font-weight: 400;
+    font-size: 1.8em;
+}
+.banner-small h5{
+    color:rgba(80,80,80,0.96);
+}
+.banner .banner-regular .links{
+    display: flex;
+    flex-direction: row;
+    height:auto;
+    width:auto;
+    margin-top:20px;
+}
+.links h3{
+    padding:5px 20px;
+    cursor:pointer;
+    font-weight: 200;
+    color:#3082D4;
+}
+.banner .banner-regular img{
+    margin-top:20px;
+}
+.shelf{
+    grid-area:shelf;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.shelf div:nth-child(odd){
+    margin:5px 5px 5px 10px;
+}
+.shelf div:nth-child(even){
+    margin:5px 10px 5px 5px;
+}
+.shelf a{
+    text-decoration: none;
+    margin:0;
+    padding:0;
+}
+.shelf .shelf-element{
+    height:600px;
+    background-color: #FBFAFC;
+}
+.shelf .shelf-element:nth-child(1){
+    background: url("Images/shelf-1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding:10px;
+}
+.shelf .shelf-element:nth-child(1) .element-content{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom:15px;
+}
+.shelf .shelf-element:nth-child(1) h1{
+    color:white;
+    font-size: 45px;
+    margin:5px;
+}
+.shelf .shelf-element:nth-child(1) h3{
+    font-weight: 400;
+    font-size: 25px;
+    color:white;
+}
+.shelf .shelf-element:nth-child(1) span{
+    margin: 10px;
+}
+.shelf .shelf-element:nth-child(1) a{
+    margin:5px;
+    text-decoration: none;
+    color:#3082D4;
+    font-size: 20px;
+}
+
+
+
+.shelf .shelf-element:nth-child(2){
+    background: url("Images/shelf-2.jpg");
+    background-color: #FBFAFC;
+    background-size: 50%;
+    background-position: center 85%;
+    background-repeat: no-repeat;
+    padding:10px;
+}
+.shelf .shelf-element:nth-child(2) .element-content{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top:35px;
+}
+.shelf .shelf-element:nth-child(2) h1{
+    font-size: 30px;
+    margin:5px;
+}
+.shelf .shelf-element:nth-child(2) h1 img{
+    height:30px;
+    width:30px;
+}
+.shelf .shelf-element:nth-child(2) h2{
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color:#CC2127;
+}
+.shelf .shelf-element:nth-child(2) h3{
+    font-size:20px;
+    font-weight: 400;
+    margin:10px;
+}
+.shelf .shelf-element:nth-child(2) span{
+    margin: 10px;
+}
+.shelf .shelf-element:nth-child(2) a{
+    margin:5px 15px;
+    text-decoration: none;
+    color:#3082D4;
+    font-size: 17px;
+}
+
+
+.shelf .shelf-element:nth-child(3){
+    background: url("Images/shelf-3.png");
+    background-color: white;
+    background-size: 80%;
+    background-position: center 90%;
+    background-repeat: no-repeat;
+    padding:10px;
+}
+.shelf .shelf-element:nth-child(3) .element-content{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top:45px;
+}
+.shelf .shelf-element:nth-child(3) h1{
+    font-size: 40px;
+    margin:5px;
+    letter-spacing: -1px;
+}
+.shelf .shelf-element:nth-child(3) h3 img{
+    height:40px;
+    width:40px;
+}
+.shelf .shelf-element:nth-child(3) h2{
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color:#CC2127;
+}
+.shelf .shelf-element:nth-child(3) h3{
+    font-size:20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+}
+.shelf .shelf-element:nth-child(3) span{
+    margin: 10px;
+}
+.shelf .shelf-element:nth-child(3) a{
+    margin:5px 15px;
+    text-decoration: none;
+    color:#3082D4;
+    font-size: 17px;
+}
+
+
+.shelf .shelf-element:nth-child(4){
+    background: url("Images/shelf-4.jpg");
+    background-color: black;
+    background-size: 55%;
+    background-position: center 85%;
+    background-repeat: no-repeat;
+    padding:10px;
+}
+.shelf .shelf-element:nth-child(4) .element-content{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top:45px;
+}
+.shelf .shelf-element:nth-child(4) h1{
+    font-size: 40px;
+    color: white;
+    margin:5px;
+    letter-spacing: -1px;
+}
+.shelf .shelf-element:nth-child(4) h3 img{
+    height:40px;
+    width:40px;
+}
+.shelf .shelf-element:nth-child(4) h2{
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color:#CC2127;
+}
+.shelf .shelf-element:nth-child(4) h3{
+    font-size:20px;
+    font-weight: 400;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+}
+.shelf .shelf-element:nth-child(4) span{
+    margin: 10px;
+}
+.shelf .shelf-element:nth-child(4) a{
+    margin:5px 15px;
+    text-decoration: none;
+    color:#3082D4;
+    font-size: 17px;
+}
+
+
+.shelf .shelf-element:nth-child(5){
+    background: url("Images/shelf-5.png");
+    background-color: black;
+    background-size: 80%;
+    background-position: center 85%;
+    background-repeat: no-repeat;
+    padding:10px;
+}
+.shelf .shelf-element:nth-child(5) .element-content{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top:25px;
+}
+.shelf .shelf-element:nth-child(5) h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    margin:5px;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shelf .shelf-element:nth-child(5) h3 img{
+    height:40px;
+    width:40px;
+}
+.shelf .shelf-element:nth-child(5) h2{
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color:#CC2127;
+}
+.shelf .shelf-element:nth-child(5) h3{
+    font-size:20px;
+    font-weight: 400;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shelf .shelf-element:nth-child(5) span{
+    margin: 10px;
+}
+.shelf .shelf-element:nth-child(5) a{
+    margin:5px 15px;
+    text-decoration: none;
+    color:#3082D4;
+    font-size: 17px;
+}
+
+
+
+.shelf .shelf-element:nth-child(6){
+    background: url("Images/shelf-6.jpg");
+    background-color: white;
+    background-size: 35%;
+    background-position: center -80%;
+    background-repeat: no-repeat;
+    padding:10px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.shelf .shelf-element:nth-child(6) .element-content{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom:25px;
+}
+.shelf .shelf-element:nth-child(6) h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin:5px;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shelf .shelf-element:nth-child(6) h3 img{
+    height:40px;
+    width:40px;
+}
+.shelf .shelf-element:nth-child(6) h2{
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color:#CC2127;
+}
+.shelf .shelf-element:nth-child(6) h3{
+    font-size:20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shelf .shelf-element:nth-child(6) span{
+    margin: 10px;
+}
+.shelf .shelf-element:nth-child(6) a{
+    margin:5px 15px;
+    text-decoration: none;
+    color:#3082D4;
+    font-size: 17px;
+}
+
+.carousel{
+    grid-area:carousel;
+}
+.footer{
+    grid-area:footer;
+}

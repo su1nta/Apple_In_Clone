@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sukanta Bala">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Apple(IN)</title>
+    <script type="text/javascript">
+        function searchOnHover()
+         {
+            document.getElementById("searchi").src="Images/searchw.svg";
+         }
+ 
+         function searchOffHover()
+         {
+             document.getElementById("searchi").src="Images/search.svg";
+         }
+         function shopOnHover()
+         {
+            document.getElementById("shopi").src="Images/shopw.svg";
+         }
+ 
+         function shopOffHover()
+         {
+             document.getElementById("shopi").src="Images/shop.svg";
+         }
+         function logoOnHover()
+         {
+            document.getElementById("logoi").src="Images/applew.png";
+            
+         }
+ 
+         function logoOffHover()
+         {
+             document.getElementById("logoi").src="Images/apple.png";
+         }
+         window.addEventListener("scroll",function(){
+            let header=document.getElementById("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+     </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header" id="header">
+            <ul class="hcontainer">
+                <li>
+                    <a href="#">
+                        <div class="logo">
+                            <img src="Images/applew.png" alt="Apple" class="logoiw">
+                            <img src="Images/apple.png" alt="Apple" class="logoi">
+                        </div>
+                    </a>
+                </li>
+                <a href=""><li>Store</li></a>
+                <a href=""><li>Mac</li></a>
+                <a href=""><li>iPad</li></a>
+                <a href=""><li>iPhone</li></a>
+                <a href=""><li>Watch</li></a>
+                <a href=""><li>Airpods</li></a>
+                <a href=""><li>TV & Home</li></a>
+                <a href=""><li>Only on Apple</li></a>
+                <a href=""><li>Accessories</li></a>
+                <a href=""><li>Support</li></a>
+                <li style="display: flex; align-items: center; justify-content: space-between; width:80px;">
+                    <a href="#">
+                        <div class="search" id="search">
+                            <img src="Images/searchw.svg" alt="Search" class="searchiw">
+                            <img src="Images/search.svg" alt="Search" class="searchi">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="shop">
+                            <img src="Images/shopw.svg" alt="Shop" class="shopiw">
+                            <img src="Images/shop.svg" alt="Shop" class="shopi">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="banner-small">
+                <h5>Get 5% instant Cashback up to ₹6000 with qualifying HDFC Bank credit cards on orders over ₹54900.‡ <a href="#" style="color:#3082D4;">Learn more ></a></h5>
+            </div>
+            <a href="#">
+                <div class="banner-regular">
+                    <h1>iPhone 13</h1>
+                    <h2>Your new superpower.</h2>
+                    <div class="links">
+                        <h3>Learn More ></h3>
+                        <h3>Buy ></h3>
+                    </div>
+                    <img src="Images/ban1.png" alt="banner">
+                </div>
+            </a>
+            <a href="#">
+                <div class="banner-regular">
+                    <h1>iPhone 13 Pro</h1>
+                    <h2>Oh. So. Pro</h2>
+                    <div class="links">
+                        <h3>Learn More ></h3>
+                        <h3>Buy ></h3>
+                    </div>
+                    <img src="Images/ban2.png" alt="banner">
+                </div>
+            </a>
+            <a href="#">
+                <div class="banner-regular" style="background-color:#F4F4F7;">
+                    <h1 style="font-style: oblique;">Get <span style="color:#CA2166;">supercharged</span> for university.</h1>
+                    <h2>Save on Mac or iPad. Plus get AirPods.<sup style="font-size:0.6em;">1</sup></h2>
+                    <div class="links">
+                        <h3>Shop now ></h3>
+                    </div>
+                    <img src="Images/ban3.png" alt="banner">
+                </div>
+            </a>
+        </div>
+        <div class="shelf">
+            <div class="shelf-element">
+                <div class="element-content">
+                    <h1>Apple Event</h1>
+                    <h3>Watch Online on 7 September at 10:30 PM IST.</h3>
+                    <span><a href="#">Learn More ></a></span>
+                </div>
+            </div>
+            <div class="shelf-element">
+                <div class="element-content">
+                    <h1><img src="Images/appleb.png" alt="Apple"/>WATCH</h1>
+                    <h2>SERIES 7</h2>
+                    <h3>It's our largest display yet.</h3>
+                    <span>
+                        <a href="#">Learn More ></a>
+                        <a href="#">Buy ></a>
+                    </span>
+                </div>
+            </div>
+            <div class="shelf-element">
+                <div class="element-content">
+                    <h1>MacBook Air</h1>
+                    <h3>Supercharged by&nbsp;<img src="Images/shelf-icon1.jpg" alt="M2"></h3>
+                    <span>
+                        <a href="#">Learn More ></a>
+                        <a href="#">Buy ></a>
+                    </span>
+                </div>
+            </div>
+            <div class="shelf-element">
+                <div class="element-content">
+                    <h1>MacBook Pro 13"</h1>
+                    <h3>Supercharged by&nbsp;<img src="Images/shelf-icon2.jpg" alt="M2"></h3>
+                    <span>
+                        <a href="#">Learn More ></a>
+                        <a href="#">Buy ></a>
+                    </span>
+                </div>
+            </div>
+            <div class="shelf-element">
+                <div class="element-content">
+                    <h1>ipad <img src="Images/shelf-icon3.png" alt="Air"></h1>
+                    <h3>Light. Bright. Full of Might.</h3>
+                    <span>
+                        <a href="#">Learn More ></a>
+                        <a href="#">Buy ></a>
+                    </span>
+                </div>
+            </div>
+            <div class="shelf-element">
+                <div class="element-content">
+                    <h1>AirPods</h1>
+                    <h3>All-new with Spatial Audio.</h3>
+                    <span>
+                        <a href="#">Learn More ></a>
+                        <a href="#">Buy ></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel">Carousel</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
