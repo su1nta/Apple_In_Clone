@@ -81,7 +81,7 @@ git push -u origin <your_branch_name>
 **14.** Click on `Create pull request`.
 
 
-**15.** You have made a PR to Originals. Wait for your submission to be accepted and your PR to be merged.
+**15.** You have made a PR to Apple_In_Clone. Wait for your submission to be accepted and your PR to be merged.
 
 This repository is for beginners and those who are new to coding. 
 Happy Coding :)
