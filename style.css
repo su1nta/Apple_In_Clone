@@ -455,4 +455,115 @@
 }
 .footer{
     grid-area:footer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F5F4F6;
+}
+.footer-top{
+    height:auto;
+    padding:10px 15px;
+    /*background-color: beige;*/
+    width:1069px;
+}
+.footer-top p{
+    margin:10px 0px;
+    font-size:13px;
+    font-weight: 200;
+    color:grey; 
+    cursor:default;
+}
+.footer-top p a{
+    color:black;
+    text-decoration: none;
+}
+.footer-top a:hover{
+    text-decoration: underline;
+}
+.footer-top hr{
+    border:none;
+    height:1px;
+    background-color: #c1c1c1;
+    width:1070px;
+}
+.footer-mid{
+    height:auto;
+    margin:20px 0px;
+    /*background-color:aquamarine;*/
+    width:1069px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-mid .column{
+    height:100%;
+    width:20%;
+    /*background-color: #3082D4;*/
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+}
+.footer-mid .column h4{
+    font-size: 14px;
+    margin:5px 0px;
+    color:#29292A;
+    cursor: default;
+}
+.footer-mid .column ul{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-mid .column ul li{
+    margin:10px 0px;
+    font-size: 13px;
+    font-weight: 100;
+    color:grey;
+}
+.footer-mid .column ul a{
+    text-decoration: none;
+    color:grey;
+}
+.footer-mid .column ul a:hover{
+    text-decoration: underline;
+}
+.footer-bottom{
+    height:auto;
+    /*background-color: greenyellow;*/
+    width:1069px;
+}
+.footer-bottom .contents{
+    height:auto;
+    width:100%;
+    margin:10px 0px;
+    display: flex;
+}
+.footer-bottom .contents p{
+    color:grey;
+    font-size: 13px;
+    cursor: default;
+}
+.footer-bottom hr{
+    width:1070px;
+    border:none;
+    height:1px;
+    background-color: #c1c1c1;
+}
+.footer-bottom .contents .content{
+    height:auto;
+    width:33.33333333%;
+    display: flex;
+    flex-direction: row;
+    margin:5px 0px;
+}
+.footer-bottom .contents .content a{
+    text-decoration: none;
+    color:grey;
+}
+.footer-bottom .contents .content a:hover{
+    text-decoration: underline;
+}
+.footer-bottom .contents .country p{
+    width:100%;
+    text-align: right;
 }
