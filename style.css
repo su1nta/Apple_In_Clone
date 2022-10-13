@@ -1,8 +1,32 @@
+@font-face {
+    font-family: 'SFProBlack';
+    src: url(fonts/SF-Pro-Display-Black.ttf);
+    font-family: 'SFProBold';
+    src: url(fonts/SF-Pro-Display-Bold.ttf); 
+}
+@font-face {
+    font-family: 'SFProLight';
+    src: url(fonts/SF-Pro-Display-Light.ttf);
+}
+@font-face {
+    font-family: 'SFProMedium';
+    src: url(fonts/SF-Pro-Display-Medium.ttf);
+}
+@font-face {
+    font-family: 'SFProRegular';
+    src: url(fonts/SF-Pro-Display-Regular.ttf);
+}
+@font-face {
+    font-family: 'SFProHeavy';
+    src: url(fonts/SF-Pro-Text-Heavy.ttf);
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'SF Mono',sans-serif;
+    font-family: 'SFProLight';
+
 }
 .wrapper{
     height:auto;
@@ -46,10 +70,10 @@
 }
 .hcontainer li{
     list-style: none;
-    margin:0px 10px;
+    margin:0px 12px;
     padding:5px 10px;
-    font-size:0.7em;
-    
+    font-size:0.8em;
+    text-decoration:none;
     font-weight: 100;
     color:rgba(230,230,230,0.8);
     transition:.2s;
@@ -78,7 +102,7 @@
     transition:.2s;
 }
 .hcontainer .search, .hcontainer .shop{
-    margin:5px 10px;
+    margin:5px 0px;
 }
 .banner{
     grid-area:banner;
@@ -101,40 +125,100 @@
 .banner .banner-regular{
     height:auto;
     background-color: #FBFAFC;
+    /* background-color: #998ca6; */
     font-weight: 100;
+    /* margin:10px 0px; */
+    display: flex;
+    flex-direction: column;
+    margin-top: -63px;
+}
+.banner .banner-regular-pro{
+    height:auto;
+    background-color: #000000;
+    /* font-weight: 100; */
+    /* font-family: 'SFProHeavy'; */
+    /* font-size: 30px; */
     margin:10px 0px;
     display: flex;
     flex-direction: column;
+    color: #F4F4F7;
+    position: relative;
 }
-.banner .banner-regular h1{
-    font-weight: 600;
-    font-size: 3.5em;
-    letter-spacing: -3.2px;
+
+.banner .banner-regular-pro h1{
+    font-weight: 500;
+    font-size: 54px;
+    /* letter-spacing: -3.2px; */
     padding-top: 35px;
+    position: absolute;
+    margin-bottom: 29rem;
+    font-family: 'SFProBold';
+}
+
+.banner .banner-regular-pro h2{
+    font-weight: 400;
+    font-size: 1.7em;
+    position: absolute;
+    margin-bottom: 20rem;
+    font-family: 'SFProRegular';
+}
+
+.banner .banner-regular-pro .move1{
+    font-weight: 400;
+    font-size: 1.4em;
+    position: absolute;
+    margin-bottom: 15rem;
+    font-family: 'SFProRegular';
+    color:#3082D4;
+    text-align: center;
+    left: 810px;
+}
+.banner .banner-regular-pro h3{
+    font-weight: 400;
+    font-size: 1.4em;
+    position: absolute;
+    margin-bottom: 15rem;
+    font-family: 'SFProRegular';
+    color:#3082D4;
+    left: 654px;
+}
+ 
+/*Pro*/
+
+.banner .banner-regular h1{
+    font-weight: 500;
+    font-size: 3.5em;
+    padding-top: 35px;
+    position: absolute;
+    margin-bottom: 25rem;
+    font-family: 'SFProMedium';
 }
 .banner .banner-regular h2{
     font-weight: 400;
     font-size: 1.8em;
+    position: absolute;
+    margin-bottom: 16rem;
+    font-family: 'SFProRegular';
 }
 .banner-small h5{
     color:rgba(80,80,80,0.96);
 }
-.banner .banner-regular .links{
-    display: flex;
-    flex-direction: row;
-    height:auto;
-    width:auto;
-    margin-top:20px;
-}
-.links h3{
+
+
+.banner .banner-regular h3{
     padding:5px 20px;
     cursor:pointer;
-    font-weight: 200;
+    font-weight: 400;
     color:#3082D4;
+    position: absolute;
+    position: relative;
+    top: 14rem;
+    float: left;
+    font-size: 21px;
+    font-family: 'SFProRegular';
+    
 }
-.banner .banner-regular img{
-    margin-top:20px;
-}
+
 .shelf{
     grid-area:shelf;
     display:grid;
