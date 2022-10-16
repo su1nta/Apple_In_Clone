@@ -16,6 +16,20 @@ The footer has other important links to information.
 
 # How to contribute
 
+### Add your name to `CONTRIBUTING.md` file using the below convention:
+
+```
+
+- Name: [YOUR NAME](GitHub link)
+- Place: City, State, Country
+- Bio: Who are you?
+- GitHub: [GitHub account name](GitHub link)
+
+```
+
+### Set up the environment for contributing
+
+
 **1.**  Fork [this](https://github.com/su1nta/Apple_In_Clone) repository.
 
 **2.**  Clone your forked copy of the project.
