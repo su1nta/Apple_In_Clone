@@ -1,7 +1,5 @@
-# Apple_In_Clone
-
 # About this repository
-This is a apple.com clone website made using HTML, CSS and JavaScript
+This is a [apple.com](https://www.apple.com/in/) clone website made using HTML, CSS and JavaScript
 
 # Sections of the Website
 It has various sections of the website like a top navbar, banner cards about new apple products and bottom footer.
@@ -28,7 +26,6 @@ The footer has other important links to information.
 ```
 
 ### Set up the environment for contributing:
-
 
 **1.**  Fork [this](https://github.com/su1nta/Apple_In_Clone) repository.
 
@@ -97,5 +94,5 @@ git push -u origin <your_branch_name>
 
 **15.** You have made a PR to Apple_In_Clone. Wait for your submission to be accepted and your PR to be merged.
 
-This repository is for beginners and those who are new to coding. 
-Happy Coding :)
+This repository is beginner friendly. 
+Happy **Hacktoberfest**. Happy Coding :)
