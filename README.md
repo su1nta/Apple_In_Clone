@@ -27,7 +27,7 @@ The footer has other important links to information.
 
 ```
 
-### Set up the environment for contributing
+### Set up the environment for contributing:
 
 
 **1.**  Fork [this](https://github.com/su1nta/Apple_In_Clone) repository.
