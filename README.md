@@ -14,7 +14,7 @@ The footer has other important links to information.
 
 # How to contribute
 
-### Add your name to `CONTRIBUTING.md` file using the below convention:
+### Add your name to `CONTRIBUTORS.md` file using the below convention:
 
 ```
 
